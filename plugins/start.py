@@ -17,10 +17,10 @@ from helpers import (
 def home_buttons():
     return InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("• MORE CHANNELS •", url=MORE_CHANNELS_URL)],
+            [InlineKeyboardButton("• ᴍᴏʀᴇ ᴄʜᴀɴɴᴇʟs •", url=MORE_CHANNELS_URL)],
             [
-                InlineKeyboardButton("• ABOUT", callback_data="about"),
-                InlineKeyboardButton("HELP •", callback_data="help"),
+                InlineKeyboardButton("• ᴀʙᴏᴜᴛ", callback_data="about"),
+                InlineKeyboardButton("ʜᴇʟᴘ •", callback_data="help"),
             ],
         ]
     )
@@ -28,8 +28,8 @@ def home_buttons():
 
 def back_buttons():
     return InlineKeyboardMarkup(
-        [[InlineKeyboardButton("HOME", callback_data="home"),
-          InlineKeyboardButton("CLOSE", callback_data="close")]]
+        [[InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="home"),
+          InlineKeyboardButton("ᴄʟᴏsᴇ•", callback_data="close")]]
     )
 
 
@@ -55,15 +55,15 @@ async def help_cmd(client, message):
 async def send_files(client, message, payload):
     user_id = message.from_user.id
 
-    # 1) check subscription
-    status = await message.reply_text("<b>🔍 CHECKING SUBSCRIPTION...</b>")
+    # 1) check sᴜʙsᴄʀɪᴘᴛɪᴏɴᴡ
+    status = await message.reply_text("<b>🔍 ᴄʜᴇᴄᴋɪɴɢ sᴜʙsᴄʀɪᴘᴛɪᴏɴ...</b>")
     rows = await get_unjoined_buttons(client, user_id)
     if rows:
-        rows.append([InlineKeyboardButton("♻️ TRY AGAIN", url=link_for(client, payload))])
+        rows.append([InlineKeyboardButton("♻️ Try Again", url=link_for(client, payload))])
         return await status.edit_text(FORCE_SUB_TEXT, reply_markup=InlineKeyboardMarkup(rows))
 
     # 2) please wait
-    await status.edit_text("<b>⏳ PLEASE WAIT...</b>")
+    await status.edit_text("<b>Please Wait..</b>")
     try:
         ids = decode_ids(payload)
     except Exception:
