@@ -92,9 +92,13 @@ async def auto_delete(client, chat_id, sent_msgs, warn_msg, payload, delay):
     except Exception:
         pass
     btn = InlineKeyboardMarkup(
-        [[InlineKeyboardButton("GET FILE AGAIN!", url=link_for(client, payload))]]
+        [[InlineKeyboardButton("ɢᴇᴛ ғɪʟᴇ ᴀɢᴀɪɴ!", url=link_for(client, payload))]]
     )
     try:
-        await warn_msg.edit_text(DELETED_TEXT, reply_markup=btn)
+        await warn_msg.edit_text(
+            DELETED_TEXT,
+            reply_markup=btn,
+            disable_web_page_preview=True,
+        )
     except Exception:
         pass
