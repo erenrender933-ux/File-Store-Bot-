@@ -32,7 +32,7 @@ ABOUT_TEXT = (
     "◈ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 3\n"
     "◈ ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ\n"
     "◈ ᴅᴀᴛᴀʙᴀsᴇ : <a href=\"https://www.mongodb.com\">ᴍᴏɴɢᴏ ᴅʙ</a>\n"
-    "◈ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=\"https://t.me/Eren_157\">ᴇʀᴇɴ ᴅᴇᴠᴇʟᴏᴘᴇʀ</a>"
+    "◈ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=\"https://t.me/Eren_157\">ᴇʀᴇɴ ᴅᴇᴠᴇʟᴏᴘᴇʀ</a></blockquote>"
 )
 
 HELP_TEXT = (
