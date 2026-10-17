@@ -59,9 +59,12 @@ async def send_files(client, message, payload):
     status = await message.reply_text("<b>🔍 ᴄʜᴇᴄᴋɪɴɢ sᴜʙsᴄʀɪᴘᴛɪᴏɴ...</b>")
     rows = await get_unjoined_buttons(client, user_id)
     if rows:
-        rows.append([InlineKeyboardButton("♻️ Try Again", url=link_for(client, payload))])
-        return await status.edit_text(FORCE_SUB_TEXT, reply_markup=InlineKeyboardMarkup(rows))
-
+        rows.append([InlineKeyboardButton("♻️ ʀᴇʟᴏᴀᴅ", url=link_for(client, payload))])
+        return await status.edit_text(
+            FORCE_SUB_TEXT.format(mention=message.from_user.mention),
+            reply_markup=InlineKeyboardMarkup(rows),
+            disable_web_page_preview=True,
+        )
     # 2) please wait
     await status.edit_text("<b>Please Wait..</b>")
     try:
