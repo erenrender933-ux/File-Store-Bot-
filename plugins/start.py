@@ -4,7 +4,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from config import (
-    ADMINS, START_PIC, START_TEXT, ABOUT_TEXT, HELP_TEXT, MORE_CHANNELS_URL,
+    START_PIC, START_TEXT, ABOUT_TEXT, HELP_TEXT, MORE_CHANNELS_URL,
     FORCE_SUB_TEXT, AUTO_DELETE_TEXT, PROTECT_CONTENT,
 )
 from database import db
@@ -29,7 +29,7 @@ def home_buttons():
 def back_buttons():
     return InlineKeyboardMarkup(
         [[InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="home"),
-          InlineKeyboardButton("ᴄʟᴏsᴇ•", callback_data="close")]]
+          InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]]
     )
 
 
@@ -52,7 +52,6 @@ async def help_cmd(client, message):
     await message.reply_text(HELP_TEXT, reply_markup=back_buttons())
 
 
-async def send_files(client, message, payload):
 async def send_files(client, message, payload):
     user_id = message.from_user.id
 
@@ -101,7 +100,7 @@ async def send_files(client, message, payload):
         disable_web_page_preview=True,
     )
     asyncio.create_task(auto_delete(client, user_id, sent, warn, payload, delay))
-    
+
 
 @Client.on_callback_query()
 async def callbacks(client, query):
@@ -126,18 +125,4 @@ async def callbacks(client, query):
 async def join_request(client, req):
     if not await db.is_fsub(req.chat.id):
         return
-    is_new = await db.add_request(req.chat.id, req.from_user.id)
-    if not is_new:
-        return
-    goal = await db.bump_goal(req.chat.id)
-    if goal:  # goal completed -> notify admins
-        for admin_id in ADMINS:
-            try:
-                await client.send_message(
-                    admin_id,
-                    f"🎯 <b>GOAL COMPLETED!</b>\n\n"
-                    f"Channel: <code>{req.chat.id}</code> ({req.chat.title})\n"
-                    f"Requests: {goal['count']}/{goal['goal']}",
-                )
-            except Exception:
-                pass
+    await db.add_request(req.chat.id, req.from_user.id)
