@@ -31,8 +31,8 @@ ABOUT_TEXT = (
     "<blockquote>◈ ʙᴏᴛ : ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ\n"
     "◈ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 3\n"
     "◈ ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ\n"
-    "◈ ᴅᴀᴛᴀʙᴀsᴇ : [ᴍᴏɴɢᴏ ᴅʙ] (www.mongodb.com)\n"
-    "◈ ᴅᴇᴠᴇʟᴏᴘᴇʀ : [ᴇʀᴇɴ ✦] (https://t.me/Eren_157)</blockquote></b>"
+    "◈ ᴅᴀᴛᴀʙᴀsᴇ : <a href=\"https://www.mongodb.com\">ᴍᴏɴɢᴏ ᴅʙ</a>"
+    "◈ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=\"https://t.me/Eren_157\">ᴇʀᴇɴ ᴅᴇᴠᴇʟᴏᴘᴇʀ</a>"
 )
 
 HELP_TEXT = (
@@ -46,12 +46,12 @@ HELP_TEXT = (
 FORCE_SUB_TEXT = (
     "<b>ʙᴀᴋᴀ ~ » {mention}\n\n"
     "<blockquote>ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟs ᴀɴᴅ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ʀᴇʟᴏᴀᴅ button ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ʀᴇǫᴜᴇꜱᴛᴇᴅ ꜰɪʟᴇ.</blockquote></b>"
-    "<b><blockquote>‣ ᴄʟɪᴄᴋ -  [ᴛᴜᴛᴏʀɪᴀʟ] (https://t.me/How_Download_Links_3/5) </blockquote></b>
+    "<b><blockquote>‣ ᴄʟɪᴄᴋ -  <a href=\"https://t.me/How_Download_Links_3\">ᴛᴜᴛᴏʀɪᴀʟ</a></blockquote></b>"
 )
 
 AUTO_DELETE_TEXT = (
     "<b><blockquote>‣ ɴᴏᴛᴇ: ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ɪɴ {time}. ꜰᴏʀᴡᴀʀᴅ ɪᴛ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ɴᴏᴡ..!\n</blockquote>"
-    "<blockquote>‣ ʜᴏᴡ ᴛᴏ ꜰᴏʀᴡᴀʀᴅ -  [ᴛᴜᴛᴏʀɪᴀʟ] (https://t.me/How_Download_Links_3/5)</blockquote></b>"
+    "<blockquote>‣ ʜᴏᴡ ᴛᴏ ꜰᴏʀᴡᴀʀᴅ - <a href=\"https://t.me/How_Download_Links_3/10\">ᴛᴜᴛᴏʀɪᴀʟ</a></blockquote></b>"
 )
 
 DELETED_TEXT = (
