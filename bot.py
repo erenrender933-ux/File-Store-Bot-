@@ -13,8 +13,8 @@ class Bot(Client):
             workers=50,
         )
 
-    async def start(self):
-        await super().start()
+    async def start(self, *args, **kwargs):
+        await super().start(*args, **kwargs)
         try:
             test = await self.send_message(DB_CHANNEL, "✅ Bot started")
             await test.delete()
@@ -22,8 +22,8 @@ class Bot(Client):
             print(f"[ERROR] Cannot access DB_CHANNEL ({DB_CHANNEL}): {e}")
         print(f"Bot started as @{self.me.username}")
 
-    async def stop(self, *args):
-        await super().stop()
+    async def stop(self, *args, **kwargs):
+        await super().stop(*args, **kwargs)
         print("Bot stopped")
 
 
