@@ -1,4 +1,6 @@
-kurigram==2.0.106
+kurigram
 tgcrypto
 motor==3.3.2
+pymongo==4.8.0
 python-dotenv
+aiohttp
