@@ -50,7 +50,7 @@ FORCE_SUB_TEXT = (
 )
 
 AUTO_DELETE_TEXT = (
-    "<b><blockquote>‣ ɴᴏᴛᴇ: ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ɪɴ {time}. ꜰᴏʀᴡᴀʀᴅ ɪᴛ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ɴᴏᴡ..!\n</blockquote>"
+    "<b><blockquote>‣ ɴᴏᴛᴇ: ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ɪɴ 10 Min. ꜰᴏʀᴡᴀʀᴅ ɪᴛ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ɴᴏᴡ..!\n</blockquote>"
     "<blockquote>‣ ʜᴏᴡ ᴛᴏ ꜰᴏʀᴡᴀʀᴅ - <a href=\"https://t.me/How_Download_Links_3/10\">ᴛᴜᴛᴏʀɪᴀʟ</a></blockquote></b>"
 )
 
