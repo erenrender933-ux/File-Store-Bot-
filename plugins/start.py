@@ -53,10 +53,13 @@ async def help_cmd(client, message):
 
 
 async def send_files(client, message, payload):
+async def send_files(client, message, payload):
     user_id = message.from_user.id
 
-    # 1) check sᴜʙsᴄʀɪᴘᴛɪᴏɴᴡ
-    status = await message.reply_text("<b>🔍 ᴄʜᴇᴄᴋɪɴɢ sᴜʙsᴄʀɪᴘᴛɪᴏɴ...</b>")
+    # please wait (normal message, not a reply)
+    status = await client.send_message(user_id, "<b>ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ...</b>")
+
+    # check subscription in background
     rows = await get_unjoined_buttons(client, user_id)
     if rows:
         rows.append([InlineKeyboardButton("♻️ ʀᴇʟᴏᴀᴅ", url=link_for(client, payload))])
@@ -65,19 +68,18 @@ async def send_files(client, message, payload):
             reply_markup=InlineKeyboardMarkup(rows),
             disable_web_page_preview=True,
         )
-    # 2) please wait
-    await status.edit_text("<b>Please Wait..</b>")
+
     try:
         ids = decode_ids(payload)
     except Exception:
-        return await status.edit_text("<b>❌ INVALID LINK.</b>")
+        return await status.edit_text("<b>❌ ɪɴᴠᴀʟɪᴅ ʟɪɴᴋ.</b>")
 
     msgs = await fetch_messages(client, ids)
     if not msgs:
-        return await status.edit_text("<b>❌ FILE NOT FOUND.</b>")
+        return await status.edit_text("<b>❌ ғɪʟᴇ ɴᴏᴛ ғᴏᴜɴᴅ.</b>")
     await status.delete()
 
-    # 3) send files instantly
+    # send files instantly
     sent = []
     for m in msgs:
         while True:
@@ -91,11 +93,15 @@ async def send_files(client, message, payload):
                 print(f"[send] {e}")
                 break
 
-    # 4) warning + auto delete
+    # auto delete note (no preview, not a reply)
     delay = await db.get_delete_time()
-    warn = await message.reply_text(AUTO_DELETE_TEXT.format(time=readable_time(delay)))
+    warn = await client.send_message(
+        user_id,
+        AUTO_DELETE_TEXT.format(time=readable_time(delay)),
+        disable_web_page_preview=True,
+    )
     asyncio.create_task(auto_delete(client, user_id, sent, warn, payload, delay))
-
+    
 
 @Client.on_callback_query()
 async def callbacks(client, query):
