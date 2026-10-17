@@ -50,11 +50,11 @@ FORCE_SUB_TEXT = (
 )
 
 AUTO_DELETE_TEXT = (
-    "‣ ɴᴏᴛᴇ: ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ɪɴ {time}. ꜰᴏʀᴡᴀʀᴅ ɪᴛ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ɴᴏᴡ..!\n"
-    "FORWARD IT SOMEWHERE ELSE BEFORE DOWNLOADING.</b>"
+    "<b><blockquote>‣ ɴᴏᴛᴇ: ᴛʜɪs ғɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ᴀᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟʏ ɪɴ {time}. ꜰᴏʀᴡᴀʀᴅ ɪᴛ ᴛᴏ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴍᴇssᴀɢᴇs ɴᴏᴡ..!\n</blockquote>"
+    "<blockquote>‣ ʜᴏᴡ ᴛᴏ ꜰᴏʀᴡᴀʀᴅ -  [ᴛᴜᴛᴏʀɪᴀʟ] (https://t.me/How_Download_Links_3/5)</blockquote></b>"
 )
 
 DELETED_TEXT = (
-    "<b>YOUR VIDEO / FILE IS SUCCESSFULLY DELETED !!\n\n"
-    "CLICK BELOW BUTTON TO GET YOUR DELETED VIDEO / FILE 👇</b>"
+    "<b><blockqute>ʏᴏᴜʀ ᴠɪᴅᴇᴏ / ғɪʟᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !!</blockquote>\n\n"
+    "<blockquote>ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ᴠɪᴅᴇᴏ / ғɪʟᴇ 👇</blockquote></b>"
 )
