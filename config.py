@@ -31,7 +31,7 @@ ABOUT_TEXT = (
     "<blockquote>◈ ʙᴏᴛ : ғɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ\n"
     "◈ ʟᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 3\n"
     "◈ ʟɪʙʀᴀʀʏ : ᴘʏʀᴏɢʀᴀᴍ\n"
-    "◈ ᴅᴀᴛᴀʙᴀsᴇ : <a href=\"https://www.mongodb.com\">ᴍᴏɴɢᴏ ᴅʙ</a>"
+    "◈ ᴅᴀᴛᴀʙᴀsᴇ : <a href=\"https://www.mongodb.com\">ᴍᴏɴɢᴏ ᴅʙ</a>\n"
     "◈ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href=\"https://t.me/Eren_157\">ᴇʀᴇɴ ᴅᴇᴠᴇʟᴏᴘᴇʀ</a>"
 )
 
@@ -55,6 +55,6 @@ AUTO_DELETE_TEXT = (
 )
 
 DELETED_TEXT = (
-    "<b><blockqute>ʏᴏᴜʀ ᴠɪᴅᴇᴏ / ғɪʟᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !!</blockquote>\n\n"
+    "<b><blockqoute>ʏᴏᴜʀ ᴠɪᴅᴇᴏ / ғɪʟᴇ ɪs sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇʟᴇᴛᴇᴅ !!</blockquote>\n\n"
     "<blockquote>ᴄʟɪᴄᴋ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴅᴇʟᴇᴛᴇᴅ ᴠɪᴅᴇᴏ / ғɪʟᴇ 👇</blockquote></b>"
 )
